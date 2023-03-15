@@ -16,7 +16,7 @@ export default function Sidebar() {
   return (
     <div>
       {/* Logo */}
-      <div className="">
+      <div className="hoverEffect">
         <Image
           src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg"
           width={50}
@@ -27,7 +27,7 @@ export default function Sidebar() {
 
       {/* Menu */}
       <div className="">
-        <SidebarMenuItem Icon={HiHome} text="Home" />
+        <SidebarMenuItem Icon={HiHome} text="Home" active />
         <SidebarMenuItem Icon={HiOutlineHashtag} text="Explore" />
         <SidebarMenuItem Icon={HiOutlineBell} text="Notifications" />
         <SidebarMenuItem Icon={HiOutlineMail} text="Messages" />
@@ -38,10 +38,12 @@ export default function Sidebar() {
       </div>
 
       {/* Button */}
-      <button>Tweet</button>
+      <button className="hidden h-12 w-56 rounded-full bg-blue-400 text-lg font-bold text-white shadow-md hover:brightness-95 xl:inline">
+        Tweet
+      </button>
 
       {/* Profile */}
-      <div className="">
+      <div className="hoverEffect flex items-center justify-center text-gray-700">
         <Image
           src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
           alt="Profile picture"
