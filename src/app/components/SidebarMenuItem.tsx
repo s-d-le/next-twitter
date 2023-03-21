@@ -12,7 +12,7 @@ export default function SidebarMenuItem({
   active,
 }: SidebarMenuItemProps) {
   return (
-    <div className="hoverEffect flex items-center text-gray-700 justify-center xl:justify-start text-lg space-x-3 h-10">
+    <div className="hoverEffect flex h-10 items-center justify-center space-x-3 p-2 text-lg text-gray-700 xl:justify-start">
       <Icon size={25} />
       <span className={`${active && "font-bold"} hidden xl:inline`}>
         {text}
