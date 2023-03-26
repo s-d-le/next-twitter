@@ -22,7 +22,7 @@ export default function Sidebar() {
           width={30}
           height={30}
           alt="Logo"
-        ></Image>
+        />
       </div>
 
       {/* Menu */}
